@@ -1,0 +1,128 @@
+\batchmode
+\documentclass{article}
+\makeatletter
+\usepackage{german,a4,psfig,html,htmllist}
+
+\pagestyle{plain}
+
+
+
+
+
+\parindent=0mm
+\parskip=2mm
+
+
+
+\title{
+    {\huge 
+    "Ubung zur Vorlesung}\\ 
+     \vspace{1.5cm}
+    {\sc \Huge 
+    Perzeption in selbstorganisierenden Nervennetzen}\\ 
+     \vspace{1.5cm}
+    {\LARGE
+    von \\ 
+    Prof. Dr. C. von der Malsburg\\ 
+     \vspace{0.5cm}
+    am\\     
+    Institut f"ur Neuroinformatik\\ 
+    -- Systembiophysik --\\ 
+    Ruhr-Uni-Bochum\\ 
+     \vspace{0.5cm}
+    im\\ 
+    Wintersemester 1996/97\\ 
+     \vspace{2cm}
+    "Ubungsgruppenleiter: Jochen Triesch
+    }
+}
+
+\author{}
+\date{}
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newcommand {\correlation}{  {\cal C}        }
+
+\newcommand {\deltaT}{       {\Delta t}      }
+
+\newcommand {\sigmoid}{      {\cal S}        }
+
+\newcommand {\sigmoidL}{     \sigmoid_{\lambda}  }
+
+\newcommand {\commandBox}[1]{    \vspace*{.6em}
+                \hspace{2cm}
+                \parbox{10cm}{#1} 
+                \vspace*{.6em}      }
+
+\newcommand {\fourCoor}{     \omega  }
+
+\newcommand {\psiI}[1]{      \psi_{#1}       }
+
+\newcommand {\psiK}{     \psi_{\vec k}       }
+
+\newcommand {\psiCcK}{       \overline{\psi}_{\vec k}}
+
+\newcommand {\psiHatI}[1]{   \hat{\psi}_{#1}     }
+
+\newcommand {\psiHatK}{      \hat{\psi}_{\vec k} }
+
+\newcommand {\sigmaEff}{     \sigma_{\mbox{\tiny eff}}   }
+
+\newcommand {\eqEnd}[1]{     \;\;\mbox{#1}       }
+
+\makeatother
+\newenvironment{tex2html_wrap}{}{}
+\newwrite\lthtmlwrite
+\def\lthtmltypeout#1{{\let\protect\string\immediate\write\lthtmlwrite{#1}}}%
+\newbox\sizebox
+\begin{document}
+\pagestyle{empty}
+\setcounter{section}{1}
+\setcounter{equation}{0}
+\setcounter{subsection}{0}
+{\newpage
+\clearpage
+\samepage % latex2html id marker 155
+\thesection
+}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+{\newpage
+\clearpage
+\samepage \begin{eqnarray}\label{eqnLogDGL}
+  \dot{x} = {dx \over dt} = (\alpha - 1) x - \alpha x^2
+\end{eqnarray}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{eqnarray}\label{eqnLogDiffGl}
+  x_{n+1} = \alpha x_n (1 - x_n)\;, \qquad 0 \leq \alpha \leq 4
+\end{eqnarray}
+}
+
+
+\end{document}

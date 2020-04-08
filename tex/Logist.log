@@ -1,0 +1,91 @@
+This is TeX, Version 3.14159 (C version 6.1) (format=latex 95.12.21)  11 FEB 1997 14:58
+**Logist.tex
+(Logist.tex
+LaTeX2e <1995/12/01>
+Hyphenation patterns for english, german, loaded.
+(/usr/local/teTeX/texmf/tex/latex/base/article.cls
+Document Class: article 1995/11/30 v1.3p Standard LaTeX document class
+(/usr/local/teTeX/texmf/tex/latex/base/size10.clo
+File: size10.clo 1995/11/30 v1.3p Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/teTeX/texmf/tex/generic/misc/german.sty
+Package `german', Version 2.5b of 95/01/20.
+Package: german 1995/01/20 v2.5b Package for writing german texts (br)
+\grmnU@D=\dimen103
+german -- \language number for USenglish undefined, default 0 used.
+german -- \language number for Austrian undefined, default 1 used.
+german -- \language number for French undefined, default 255 used.
+)
+(/usr/local/teTeX/texmf/tex/latex/misc/a4.sty
+Package: a4 1995/08/10 v1.2d A4 based page layout
+)
+(/usr/local/teTeX/texmf/tex/generic/misc/psfig.sty
+\@unused=\write3
+\ps@stream=\read1
+\p@intvaluex=\dimen104
+\p@intvaluey=\dimen105
+
+psfig/tex 1.10-dvips
+) (/home/loos/TeX/latex2html/texinputs/html.sty
+Package: html 1996/02/01 v1.0 hypertext commands for latex2html (nd, hs)
+\c@lpart=\count87
+\c@lchapter=\count88
+\c@lsection=\count89
+\c@lsubsection=\count90
+\c@lsubsubsection=\count91
+\c@lparagraph=\count92
+\c@lsubparagraph=\count93
+\c@lsubsubparagraph=\count94
+\c@lequation=\count95
+)
+(/home/loos/TeX/latex2html/texinputs/htmllist.sty)
+\@input{../../commonTeX/all.aux}
+(../../commonTeX/all.tex) (Logist.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 66.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 66.
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+
+ []
+
+[1
+
+
+
+] [2] (Logist.aux) ) 
+Here is how much of TeX's memory you used:
+ 772 strings out of 10912
+ 7917 string characters out of 72953
+ 56193 words of memory out of 262141
+ 3678 multiletter control sequences out of 9500
+ 6149 words of font info for 23 fonts, out of 150000 for 255
+ 14 hyphenation exceptions out of 607
+ 23i,7n,19p,176b,221s stack positions out of 300i,40n,60p,3000b,4000s
+
+Output written on Logist.dvi (2 pages, 4828 bytes).

@@ -1,0 +1,170 @@
+\documentclass{article}
+\usepackage{german,a4,psfig,html,htmllist}
+
+%\pagestyle{empty}
+\pagestyle{plain}
+
+
+%\textwidth 18cm
+%\textheight 25cm
+%\topmargin 0.3cm
+%\headheight 0mm
+%\headsep 1pt
+%\parindent 0cm
+%\oddsidemargin -1.2cm
+%\evensidemargin -1.2cm
+
+
+% --------------------------------------------------
+
+\parindent=0mm
+\parskip=2mm
+
+% --------------------------------------------------
+
+\include{../../commonTeX/all}
+
+% --------------------------------------------------
+
+\begin{document}
+
+%---------------------------
+%  "Ubung 1 
+%
+%   Einf"uhrung in Unix und NSL
+%   Beispiele:
+%     - logistische Gleichung (logistische Differenzen-Gleichung)
+%     - didday (im Text nicht erw"ahnt. Nur, falls wir in der "Ubung
+%           zu schnell voran kommen)
+%---------------------------
+
+
+% ====== header
+
+%\begin{flushright} \today \end{flushright}
+
+\begin{center}
+\setcounter{section}{1}
+\setcounter{equation}{0}
+\setcounter{subsection}{0}
+\section*{"Ubung \thesection{} zur Vorlesung\\ 
+ ``Perzeption in selbstorganisierenden Nervennetzen''} 
+\centerline{\large Einf"uhrung}
+\large (Abgabe der diesmal allesamt `freiwilligen' Aufgaben an einem 
+beliebigen Termin)
+\end{center}
+
+
+% ======================================================================
+
+\subsection{Administratives}
+
+Rechnerzeiten sind vorzugsweise: {\em Mo-Fr: 8:00-10:00 und ab 18:00 Uhr.}
+\noindent 
+F"ur Fragen und Beratung stehen zur Verf"ugung:
+
+\begin{tabular}{lll}
+  Name   & Raum \\
+  Jochen Triesch (Inhaltliche Fragen zu den "Ubungen)   
+    & ND-03 69 \\
+  Jan Vorbr"uggen (Speziell morgens 8:00-10:00 Uhr)
+    & ND-03 33 \\
+  Christian Eckes (Speziell abends ab 18:00 Uhr)
+    & ND-03 70 \\
+  Michael Neef (nur {\bf dringende} Systemfragen, z.B. Rechner kaputt)  
+    &  ND-03 68 \\
+\end{tabular}
+
+
+
+\subsection{Erste Schritte}
+
+% ===
+\subsubsection{Betriebssystem {\sc Unix}}
+
+Loggen Sie sich ein. Die dazu notwendigen Loginnamen und  Pa"sw"orter 
+werden in der "Ubung mitgeteilt.
+Machen Sie sich mit Ihrem Dateisystem vertraut. Wichtige Kommandos:
+
+\commandBox{
+    \tt     cd {\em directoryname} \\
+    cd .. \\
+    ls [-l] [{\em directoryname}] \\
+    pwd \\
+}
+
+
+% ======================================================================
+
+\subsection{Numerisches L"osen von Differentialgleichungen (DGLs)}
+
+\begin{itemize}
+
+% ---
+\item[(a)] Starten Sie die \htmladdnormallink{Java-Simulation Logist.}{../../Logist.html} \\
+Was wird in den 6 Graphen dargestellt?\\
+W"ahlen Sie andere Werte f"ur $\alpha$ ($\alpha>0$, z.B. \texttt{alpha = 3.7}).
+
+% ---
+\item[(b*)] Zum wieder warm werden mit L"osungen von DGLs (gedacht als
+freiwillige `Hausaufgabe'):\\
+Die zugrunde liegende {\em logistische Differentialgleichung}
+\begin{eqnarray}    \label{eqnLogDGL}
+  \dot{x} = {dx \over dt} = (\alpha - 1) x - \alpha x^2
+\end{eqnarray}
+ist noch einfach genug, um eine analytische L"osung mittels
+Separation der Variablen und elementar bestimmter Integrale zuzulassen.
+F"uhren Sie diese durch und diskutieren Sie das Verhalten der Fixpunkte
+anhand der L"osungen.
+
+% --- 
+\item[(c)] Die DGL wird nicht analytisch sondern
+numerisch berechnet. W"ahlen Sie mit z.B. \texttt{delta = 0.8}
+gr"o"sere Schrittweiten f"ur die numerische Integration der DGL und
+beobachten sie das Resultat.
+
+Das hier verwendete Integrationsverfahren nach Euler f"uhrt  bei
+der Schrittweite 1.0 die logistische DGL~(\ref{eqnLogDGL}) in die 
+bekannte {\em logistische Diffenzengleichung}
+\begin{eqnarray}    \label{eqnLogDiffGl}
+  x_{n+1} = \alpha x_n (1 - x_n)\;, \qquad 0 \leq \alpha \leq 4
+\end{eqnarray}
+"uber. Sie ist eine der bekanntesten Gleichungen f"ur Chaos ($\alpha=3.1$
+2er Periode, $\alpha=3.5$ 4er Periode, $\alpha>3.57$ chaotisch).
+
+% --- 
+\item[(d*)] Leiten sie wie beschrieben aus~(\ref{eqnLogDGL})
+die Gleichung~(\ref{eqnLogDiffGl}) her.
+
+\end{itemize}
+
+\vspace{.5em}
+{\em Dieses Beispiel soll die Schwierigkeit bei der Wahl geeigneter
+Intergrationsschrittweiten beleuchten.}
+
+
+% ------------------------------
+
+\vspace{1em}
+
+Die Aufgaben mit $\star$ sind Zus"atze f"ur die Leute, denen der Rest
+zu langweilig ist. 
+
+\vspace{1em}
+
+Viel Spa"s!
+
+\vspace{3em}
+
+Die WWW-Seiten inklusive des Java-Quelltextes und der "ubersetzten
+class-Dateien befinden sich als Archiv in zwei Versionen komplett zum
+Downloaden auf dem Institutsserver.
+
+Das eine Archiv ist als komprimierte tar-Datei \texttt{Logist.tar.gz} f"ur
+Unix Betriebssysteme, das andere f"ur Windows 95
+in der Datei \texttt{Logist.zip} verf"ugbar. Der Inhalt der Dateien ist
+identisch.
+
+
+
+\end{document}
